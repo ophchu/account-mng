@@ -14,7 +14,7 @@ object OPRProjectBuild extends Build {
 
   // OC 20130710 - disabled checksums to get paralllelai.spyglass 2.0.4 jar to download.  
   // Probably worth removing with future versions.
-  lazy val project = Project("dgn-spark-dbc", file("."))
+  lazy val project = Project("daccount-mng", file("."))
     .settings(net.virtualvoid.sbt.graph.Plugin.graphSettings: _*)
     .settings(buildSettings: _*)
     .settings(checksums in update := Nil)
